@@ -80,25 +80,32 @@ def check_with_gemini(article):
     
     # Quick keyword pre-filter to save API calls
     text = (article['title'] + ' ' + article.get('summary', '')).lower()
-    keywords = ['relocat', 'headquarters', 'hq move', 'office move', 
-                'factory move', 'moving to', 'new location', 'shift', 
-                'transfer', 'facility', 'expansion', 'opening']
-    
+    keywords = [
+        'relocat', 'shift', 'move', 'moving', 'moved from', 'moved to', 'relocating', 
+        'transferred', 'hq shift', 'headquarters move', 'office move', 'transfers headquarters',
+        'shifted office', 'shifted hq', 'branch moved', 'facility shift', 'plant relocated'
+    ]
     if not any(keyword in text for keyword in keywords):
         return False
-    
-    # Use Gemini for accurate filtering
+
+    # Strict Gemini prompt:
+    prompt = """
+Is this article specifically about a company physically relocating (moving) their headquarters, main office, branch office, or manufacturing facility from one city/state/country to another?
+Only answer YES if:
+- An existing company moves, relocates, or transfers its main place of business OR factory OR office from one specific location to a different one.
+- Headlines or text clearly state “moved from”, “relocated from/to”, “shifted office/plants from”, “transferred headquarters”, or similar.
+Answer NO if:
+- The article is only about expansion, opening a new office/facility with no mention of closing or moving the previous one.
+- It’s about hiring, policy, government news, climate, business partnerships, or any topic that is NOT a physical move from one location to another.
+Return only YES or NO.
+
+Title: {title}
+Summary: {summary}
+
+Answer (YES or NO only):
+""".format(title=article['title'], summary=article.get('summary', '')[:400])
+
     url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key={api_key}"
-    
-    prompt = f"""Analyze this article and answer ONLY with YES or NO.
-
-Question: Is this article about a company relocating their office, headquarters, factory, or any business facility from one location to another?
-
-Title: {article['title']}
-Summary: {article.get('summary', '')[:400]}
-
-Answer (YES or NO only):"""
-
     payload = {
         "contents": [{
             "parts": [{"text": prompt}]
@@ -111,18 +118,16 @@ Answer (YES or NO only):"""
     
     try:
         response = requests.post(url, json=payload, timeout=10)
-        
         if response.status_code == 200:
             result = response.json()
             answer = result['candidates'][0]['content']['parts'][0]['text'].strip().upper()
             return 'YES' in answer
         else:
             print(f"⚠️ Gemini API error: {response.status_code}")
-            return True  # Keep if keywords matched
-            
+            return False
     except Exception as e:
         print(f"⚠️ Gemini error: {e}")
-        return True  # Keep if keywords matched
+        return False
 
 def extract_company_info(article):
     """Extract company name, locations, and other details"""
@@ -290,11 +295,4 @@ def main():
     print("="*60 + "\n")
     
     # Print summary
-    print("📊 SUMMARY:")
-    print(f"   • Total articles checked: {len(articles)}")
-    print(f"   • Relocations found: {len(relocations)}")
-    print(f"   • New items: {len(new_items)}")
-    print(f"   • Total in database: {len(load_existing_data())}")
-
-if __name__ == "__main__":
-    main()
+    print
