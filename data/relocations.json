@@ -1,0 +1,78 @@
+[
+  {
+    "title": "China urges 'practical actions' from Dutch government to resolve Nexperia dispute",
+    "link": "https://economictimes.indiatimes.com/tech/technology/china-urges-practical-actions-from-dutch-government-to-resolve-nexperia-dispute/articleshow/125464135.cms",
+    "published": "Thu, 20 Nov 2025 18:44:38 +0530",
+    "summary": "China urged the Netherlands to take practical steps to resolve the Nexperia dispute and support affected firms. Minister Wang Wentao blamed Dutch intervention and a court ruling removing Nexperia\u2019s CEO for semiconductor supply chain turmoil after the government took control to prevent relocation to China.",
+    "info": {
+      "company": "China",
+      "locations": [],
+      "date": "2025-11-20"
+    },
+    "scraped_at": "2025-11-20T15:31:17.755744"
+  },
+  {
+    "title": "Delhivery launches all-women distribution centre in Kochi",
+    "link": "https://economictimes.indiatimes.com/tech/startups/delhivery-launches-all-women-distribution-centre-in-kochi/articleshow/125463535.cms",
+    "published": "Thu, 20 Nov 2025 18:14:27 +0530",
+    "summary": "The Kochi facility features specially designed, women-centric infrastructure with secure rest areas, changing facilities, ergonomically designed workspaces, enhanced safety and security features, and flexible work arrangements to support work-life balance, the company said.",
+    "info": {
+      "company": "Delhivery",
+      "locations": [
+        "Kochi"
+      ],
+      "date": "2025-11-20"
+    },
+    "scraped_at": "2025-11-20T15:31:17.755751"
+  },
+  {
+    "title": "COP30: India pitches for expanding joint crediting mechanism for global climate action",
+    "link": "https://timesofindia.indiatimes.com/india/cop30-india-pitches-for-expanding-joint-crediting-mechanism-for-global-climate-action/articleshow/125465793.cms",
+    "published": "2025-11-20T20:29:22+05:30",
+    "summary": "<a href=\"https://timesofindia.indiatimes.com/india/cop30-india-pitches-for-expanding-joint-crediting-mechanism-for-global-climate-action/articleshow/125465793.cms\"><img align=\"left\" border=\"0\" hspace=\"10\" src=\"https://timesofindia.indiatimes.com/photo/125465793.cms\" style=\"margin-top: 3px; margin-right: 5px;\" /></a>India is advocating for the expansion of a bilateral Joint Crediting Mechanism (JCM) as a vital tool for global climate action. Spearheaded by Japan, this model allows countries to jointly develop mitigation projects and transparently allocate emission reduction credits, reinforcing multilateral climate objectives.",
+    "info": {
+      "company": "COP",
+      "locations": [],
+      "date": "2025-11-20"
+    },
+    "scraped_at": "2025-11-20T15:31:17.755753"
+  },
+  {
+    "title": "Russia signals support for India\u2019s air combat needs: Offers Su-57 fighter tech transfer; calls New Delhi\u2019s demands \u2018acceptable\u2019",
+    "link": "https://timesofindia.indiatimes.com/india/russia-signals-support-for-indias-air-combat-needs-offers-su-57-fighter-tech-transfer-calls-new-delhis-demands-acceptable/articleshow/125464369.cms",
+    "published": "2025-11-20T19:42:36+05:30",
+    "summary": "<a href=\"https://timesofindia.indiatimes.com/india/russia-signals-support-for-indias-air-combat-needs-offers-su-57-fighter-tech-transfer-calls-new-delhis-demands-acceptable/articleshow/125464369.cms\"><img align=\"left\" border=\"0\" hspace=\"10\" src=\"https://timesofindia.indiatimes.com/photo/125464369.cms\" style=\"margin-top: 3px; margin-right: 5px;\" /></a>Russia has offered India unrestricted technology transfer for its Su-57 fifth-generation fighter jets, including production and licensing for critical components. This significant defence partnership aims to bolster India's future fighter aircraft needs, ensuring domestic manufacturing capabilities and long-term upgrades, reinforcing over six decades of cooperation ahead of President Putin's visit.",
+    "info": {
+      "company": "Russia",
+      "locations": [],
+      "date": "2025-11-20"
+    },
+    "scraped_at": "2025-11-20T15:31:17.755755"
+  },
+  {
+    "title": "Sortera is turning America\u2019s scrap aluminum problem into cash",
+    "link": "https://techcrunch.com/2025/11/20/sortera-is-turning-americas-scrap-aluminum-problem-into-cash/",
+    "published": "Thu, 20 Nov 2025 13:20:00 +0000",
+    "summary": "Sortera has developed an AI-guided system to sort scrap aluminum by specific grades. The startup is building a second sorting facility in Tennessee.",
+    "info": {
+      "company": "Sortera",
+      "locations": [
+        "Tennessee"
+      ],
+      "date": "2025-11-20"
+    },
+    "scraped_at": "2025-11-20T15:31:17.755756"
+  },
+  {
+    "title": "ChatGPT Atlas adds Arc-like vertical tabs",
+    "link": "https://www.theverge.com/news/825036/openai-chatgpt-atlas-arc-vertical-tabs-update",
+    "published": "2025-11-20T10:04:02-05:00",
+    "summary": "OpenAI is updating ChatGPT Atlas with vertical tabs that make it look a bit like the Arc browser. Now, instead of opening a new tab at the top of the AI-powered browser, you can change your tab style to access them within a left-hand sidebar. Similar to Arc, you can resize the sidebar on ChatGPT [&#8230;]",
+    "info": {
+      "company": "ChatGPT Atlas",
+      "locations": [],
+      "date": "2025-11-20"
+    },
+    "scraped_at": "2025-11-20T15:31:17.755758"
+  }
+]
